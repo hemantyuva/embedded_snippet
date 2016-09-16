@@ -1,0 +1,17 @@
+<form ng-app="articlesEmbedded" ng-controller="MainCtrl" ng-submit="addPost()"  class="formtastic article" id="new_article">
+	<fieldset class="inputs">
+		<ol>
+			<li class="string input optional stringish" id="article_title_input">
+				<label for="article_title" class="label">Title</label>
+				<input id="article_title" type="text" name="title" ng-model="article.title" >
+			</li>
+			<li class="text input optional" id="article_body_input">
+				<label for="article_body" class="label">Body</label>
+				<textarea rows="20" id="article_body" name="body" ng-model="article.body" >
+				</textarea>
+			</li>
+		</ol>
+	</fieldset>
+	<fieldset class="actions"><ol><li class="action input_action " id="article_submit_action"><input type="submit" name="commit" value="Create Article"></li><li class="cancel"><a href="/admin/articles">Cancel</a></li></ol>
+	</fieldset>
+</form>

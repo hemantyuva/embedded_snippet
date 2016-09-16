@@ -1,0 +1,28 @@
+<table  border="0" cellspacing="0" cellpadding="0" id="index_table_articles" class="index_table index" paginator="true">
+	<thead>
+		<tr>
+		<th class="sortable col col-title"><a href="/admin/articles?order=title_desc">Title</a></th>
+		<th class="sortable col col-body"><a href="/admin/articles?order=body_desc">Body</a></th>
+		<th></th>
+		</tr>
+	</thead>
+	<tbody>
+	<% @articles.each do |article| %>
+		<tr class="even" id="article_1">
+			<td class="col col-title"><%=article.title %></td>
+			<td class="col col-body">
+			  	<%=raw article.body %>
+			</td>
+			<td class="col col-actions">
+			  <div class="table_actions">
+			  <%= link_to 'View', admin_article_path(article), class: "view_link member_link" %>
+			  <%= link_to 'Edit', edit_admin_article_path(article), class: "edit_link member_link" %>
+			  <%= link_to 'Delete', admin_article_path(article), method: :delete ,class: "edit_link member_link", :data => {:confirm => 'Are you sure?'}%>
+				</div>
+			</td>
+		</tr>
+	<%end%>
+	</tbody>
+</table>
+
+
