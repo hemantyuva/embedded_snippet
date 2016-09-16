@@ -1,7 +1,7 @@
 
 # Embedded snippet html For URL(Youtube & Instragram) With active admin
 
-Setup of active admin  
+##Setup of active admin  
 
 gem 'activeadmin', '~> 1.0.0.pre4'
 
@@ -21,8 +21,9 @@ rails g active_admin:install --skip-users # skips Devise install
 
 
 ## Generate active admin
-
-rails generate active_admin:resource MyModel
+rails generate active_admin:resource Model
+Here Model is model name use this for generate active admin for that model 
+note: first need to be create a model  
 
 ## Now for convert url to html snippet 
 
