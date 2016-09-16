@@ -15,6 +15,7 @@ require 'oembed'
 	index do 
 		render partial: 'index'
 	end
+ 
 
   show do |ad|
     attributes_table do

@@ -1,5 +1,5 @@
 
-# Embedded snippet html For URL(Youtube & Instragram) With active admin
+# Embedded snippet html For URL(Youtube & Instagram) With active admin
 
 ##Setup of active admin  
 
